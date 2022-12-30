@@ -71,6 +71,16 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/codeLab3Dot1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:onClick="launchThreeDotOne"
+                android:padding="15dp"
+                android:text="3.1 SimpleCalc &amp; Debugger"
+                android:textSize="20sp" />
+
+            <TextView
                 android:id="@+id/otherPractices"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

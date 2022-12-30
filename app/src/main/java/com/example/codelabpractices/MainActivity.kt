@@ -36,4 +36,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun launchThreeDotOne(view: View) {
+        val intent = Intent(this, CodeLab3Dot1::class.java)
+        startActivity(intent)
+    }
+
 }
