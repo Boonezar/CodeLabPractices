@@ -25,27 +25,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="@string/codeLabsHeader"
+                android:text="@string/code_labs_header"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/codeLab1dot2"
+                android:id="@+id/codeLab1Dot2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:onClick="launchOneDotTwo"
                 android:padding="15dp"
                 android:text="@string/lab_1_2"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/codeLab1dot3"
+                android:id="@+id/codeLab1Dot3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:onClick="launchOneDotThree"
                 android:padding="15dp"
                 android:text="@string/lab_1_3"
                 android:textSize="20sp" />
@@ -55,9 +53,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:onClick="launchTwoDotOne"
                 android:padding="15dp"
-                android:text="2.1 - 2.2 Activities and Intents"
+                android:text="@string/lab_2_1"
                 android:textSize="20sp" />
 
             <TextView
@@ -65,9 +62,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:onClick="launchTwoDotThree"
                 android:padding="15dp"
-                android:text="2.3 Implicit Intents"
+                android:text="@string/lab_2_3"
                 android:textSize="20sp" />
 
             <TextView
@@ -75,9 +71,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:onClick="launchThreeDotOne"
                 android:padding="15dp"
-                android:text="3.1 SimpleCalc &amp; Debugger"
+                android:text="@string/lab_3_1"
                 android:textSize="20sp" />
 
             <TextView
@@ -85,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="Other Practices"
+                android:text="@string/other_practices"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="34sp"
                 android:textStyle="bold" />
@@ -95,9 +90,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:onClick="launchComposeList"
                 android:padding="15dp"
-                android:text="Compose Dynamic List"
+                android:text="@string/compose_list"
                 android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>

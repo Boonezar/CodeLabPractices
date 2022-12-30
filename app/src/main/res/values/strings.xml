@@ -1,14 +1,20 @@
 <resources>
+    <!--  General  -->
     <string name="app_name">CodeLabPractices</string>
+    <string name="code_labs_header">CodeLabs</string>
+    <string name="lab_1_2">1.2 First Interactive UI</string>
+    <string name="lab_1_3">1.3 Scrolling Views</string>
+    <string name="lab_2_1">2.1 – 2.2 Activities and Intents</string>
+    <string name="lab_2_3">2.3 Implicit Intents</string>
+    <string name="lab_3_1"><![CDATA[3.1 SimpleCalc & Debugger]]></string>
+    <string name="other_practices">Other Practices</string>
+    <string name="compose_list">Compose Dynamic List</string>
 
     <!--  1.2  -->
     <string name="button_label_toast">Toast</string>
     <string name="button_label_count">Count</string>
     <string name="count_initial_value">0</string>
     <string name="toast_message">Hello Toast!</string>
-    <string name="lab_1_2">1.2 First Interactive UI</string>
-    <string name="lab_1_3">1.3 Scrolling Views</string>
-    <string name="codeLabsHeader">CodeLabs</string>
 
     <!--  1.3  -->
     <string name="article_title">Beatles Anthology Vol. 1</string>
