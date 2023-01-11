@@ -3,7 +3,7 @@ package com.example.codelabpractices
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import com.example.codelabpractices.util.Calculator
@@ -24,12 +24,14 @@ class CodeLab3Dot1 : AppCompatActivity() {
         mResultTextView = findViewById(R.id.operation_result_text_view)
         mOperandOneEditText = findViewById(R.id.operand_one_edit_text)
         mOperandTwoEditText = findViewById(R.id.operand_two_edit_text)
+
+        findViewById<Button>(R.id.operation_add_btn).setOnClickListener { compute(Calculator.Operator.ADD) }
+        findViewById<Button>(R.id.operation_sub_btn).setOnClickListener { compute(Calculator.Operator.SUB) }
+        findViewById<Button>(R.id.operation_mul_btn).setOnClickListener { compute(Calculator.Operator.MUL) }
+        findViewById<Button>(R.id.operation_div_btn).setOnClickListener { computeDiv() }
     }
 
-    fun onAdd(view: View) = compute(Calculator.Operator.ADD)
-    fun onSub(view: View) = compute(Calculator.Operator.SUB)
-    fun onMul(view: View) = compute(Calculator.Operator.MUL)
-    fun onDiv(view: View) {
+    private fun computeDiv() {
         try {
             compute(Calculator.Operator.DIV)
         } catch (e: java.lang.IllegalArgumentException) {

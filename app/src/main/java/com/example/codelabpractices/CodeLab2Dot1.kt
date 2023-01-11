@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
@@ -29,6 +30,7 @@ class CodeLab2Dot1 : AppCompatActivity() {
         mMessageEditText = findViewById(R.id.editText_main)
         mReplyHeadTextView = findViewById(R.id.text_header_reply);
         mReplyTextView = findViewById(R.id.text_message_reply);
+        findViewById<Button>(R.id.button_main).setOnClickListener { launchSecondActivity() }
 
         // Restore the state
         if (savedInstanceState != null) {
@@ -75,7 +77,7 @@ class CodeLab2Dot1 : AppCompatActivity() {
         }
     }
 
-    fun launchSecondActivity(view: View) {
+    private fun launchSecondActivity() {
         Log.d(LOG_TAG, "Button clicked!")
         val intent = Intent(this, CodeLab2Dot1Second::class.java)
         intent.putExtra(EXTRA_MESSAGE, mMessageEditText.text)

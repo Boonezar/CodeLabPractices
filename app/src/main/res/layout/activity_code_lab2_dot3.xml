@@ -22,7 +22,6 @@
         android:layout_height="wrap_content"
         android:padding="20dp"
         android:text="@string/button_uri"
-        android:onClick="openWebsite"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/website_edittext" />
 
@@ -43,7 +42,6 @@
         android:layout_marginStart="4dp"
         android:padding="20dp"
         android:text="@string/button_loc"
-        android:onClick="openLocation"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/location_edittext" />
 
@@ -63,7 +61,6 @@
         android:layout_height="wrap_content"
         android:padding="20dp"
         android:text="@string/button_share"
-        android:onClick="shareText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/share_edittext" />
 </androidx.constraintlayout.widget.ConstraintLayout>

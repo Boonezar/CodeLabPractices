@@ -33,7 +33,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:onClick="onAdd"
             android:text="@string/sub_operation_text" />
 
         <Button
@@ -43,7 +42,6 @@
             android:layout_margin="5dp"
             android:layout_toEndOf="@id/operation_add_btn"
             android:layout_toRightOf="@id/operation_add_btn"
-            android:onClick="onSub"
             android:text="@string/sub_operation_text" />
 
         <Button
@@ -52,7 +50,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/operation_add_btn"
             android:layout_margin="5dp"
-            android:onClick="onDiv"
             android:text="@string/div_operation_text" />
 
         <Button
@@ -63,7 +60,6 @@
             android:layout_margin="5dp"
             android:layout_toEndOf="@id/operation_add_btn"
             android:layout_toRightOf="@id/operation_add_btn"
-            android:onClick="onMul"
             android:text="@string/mul_operation_text" />
 
     </RelativeLayout>

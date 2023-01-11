@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 
@@ -20,6 +20,7 @@ class CodeLab2Dot1Second : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_code_lab2_dot1_second)
         mReply = findViewById(R.id.editText_second)
+        findViewById<Button>(R.id.button_second).setOnClickListener { returnReply() }
         val message: String = intent.extras?.get(CodeLab2Dot1.EXTRA_MESSAGE).toString()
         Log.d(LOG_TAG, "Received Message: $message")
         findViewById<TextView>(R.id.text_message).text = message
@@ -50,7 +51,7 @@ class CodeLab2Dot1Second : AppCompatActivity() {
         Log.d(LOG_TAG, "onDestroy")
     }
 
-    fun returnReply(view: View) {
+    private fun returnReply() {
         val reply =  mReply.text.toString()
         val replyIntent = Intent()
         replyIntent.putExtra(EXTRA_REPLY, reply)

@@ -5,7 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import androidx.core.app.ShareCompat
 
@@ -23,9 +23,13 @@ class CodeLab2Dot3 : AppCompatActivity() {
         mWebsiteEditText = findViewById(R.id.website_edittext)
         mLocationEditText = findViewById(R.id.location_edittext)
         mShareTextEditText = findViewById(R.id.share_edittext)
+
+        findViewById<Button>(R.id.open_website_button).setOnClickListener { openWebsite() }
+        findViewById<Button>(R.id.open_location_button).setOnClickListener { openLocation() }
+        findViewById<Button>(R.id.share_text_button).setOnClickListener { shareText() }
     }
 
-    fun openWebsite(view: View) {
+    private fun openWebsite() {
         val webpage = Uri.parse(mWebsiteEditText.text.toString())
         val intent = Intent(Intent.ACTION_VIEW, webpage)
 
@@ -36,7 +40,7 @@ class CodeLab2Dot3 : AppCompatActivity() {
         }
     }
 
-    fun openLocation(view: View) {
+    private fun openLocation() {
         val addressUri = Uri.parse("geo:0,0?q=${mLocationEditText.text}")
         val intent = Intent(Intent.ACTION_VIEW, addressUri)
 
@@ -47,7 +51,7 @@ class CodeLab2Dot3 : AppCompatActivity() {
         }
     }
 
-    fun shareText(view: View) {
+    private fun shareText() {
         ShareCompat.IntentBuilder(this)
             .setType("text/plain")
             .setChooserTitle("Share this text with: ")
