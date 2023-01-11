@@ -7,6 +7,7 @@
     <string name="lab_2_1">2.1 – 2.2 Activities and Intents</string>
     <string name="lab_2_3">2.3 Implicit Intents</string>
     <string name="lab_3_1"><![CDATA[3.1 SimpleCalc & Debugger]]></string>
+    <string name="lab_3_3">3.3 Support Libraries</string>
     <string name="other_practices">Other Practices</string>
     <string name="compose_list">Compose Dynamic List</string>
 
@@ -67,4 +68,6 @@
     <string name="div_operation_text">Div</string>
     <string name="mul_operation_text">Mul</string>
     <string name="computationError">Error</string>
+    <string name="hello_world_text">Hello World</string>
+    <string name="change_color_button">Change Color</string>
 </resources>
