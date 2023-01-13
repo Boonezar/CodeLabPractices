@@ -8,6 +8,7 @@
     <string name="lab_2_3">2.3 Implicit Intents</string>
     <string name="lab_3_1"><![CDATA[3.1 SimpleCalc & Debugger]]></string>
     <string name="lab_3_3">3.3 Support Libraries</string>
+    <string name="lab_4_1">4.1 Droid Cafe</string>
     <string name="other_practices">Other Practices</string>
     <string name="compose_list">Compose Dynamic List</string>
 
@@ -70,4 +71,22 @@
     <string name="computationError">Error</string>
     <string name="hello_world_text">Hello World</string>
     <string name="change_color_button">Change Color</string>
+    <string name="title_activity_droid_cafe">DroidCafe</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- 4.1 -->
+    <string name="intro_text">Droid Desserts</string>
+    <string name="donut">Donuts are glazed and sprinkled with candy.</string>
+    <string name="ice_cream_sandwiches">Ice cream sandwiches have chocolate wafers and vanilla filling.</string>
+    <string name="froyo">FroYo is premium self-serve frozen yogurt.</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
 </resources>
