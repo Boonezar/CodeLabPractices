@@ -73,10 +73,8 @@
     <string name="change_color_button">Change Color</string>
     <string name="title_activity_droid_cafe">DroidCafe</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="first_fragment_label">Droid Cafe</string>
+    <string name="second_fragment_label">Your Order</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
@@ -89,4 +87,24 @@
     <string name="donut_order_message">You ordered a donut.</string>
     <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
     <string name="froyo_order_message">You ordered a FroYo.</string>
+
+    <!-- 4.2 -->
+    <string name="name">Name</string>
+    <string name="enter_name_hint">Enter your name</string>
+    <string name="enter_address_hint">Enter your address</string>
+    <string name="address">Address</string>
+    <string name="enter_number_hint">Enter your phone number</string>
+    <string name="phone">Phone</string>
+    <string name="note">Note</string>
+    <string name="enter_note_hint">Enter note</string>
+    <string name="choose_delivery_method">Choose a delivery method:</string>
+    <string name="same_day">Same day messenger service</string>
+    <string name="next_day">Next day ground delivery</string>
+    <string name="pick_up">Pick up</string>
+    <string-array name="labels_array">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
 </resources>

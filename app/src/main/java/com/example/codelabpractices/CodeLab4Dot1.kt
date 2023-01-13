@@ -38,6 +38,4 @@ class CodeLab4Dot1 : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
-
-
 }
