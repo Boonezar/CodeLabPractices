@@ -9,6 +9,7 @@
     <string name="lab_3_1"><![CDATA[3.1 SimpleCalc & Debugger]]></string>
     <string name="lab_3_3">3.3 Support Libraries</string>
     <string name="lab_4_1">4.1 Droid Cafe</string>
+    <string name="compose_basics">Compose Basics</string>
     <string name="other_practices">Other Practices</string>
     <string name="compose_list">Compose Dynamic List</string>
 
@@ -107,4 +108,9 @@
         <item>Mobile</item>
         <item>Other</item>
     </string-array>
+
+    <!-- Compose Basics CodeLab -->
+    <string name="title_activity_code_lab_compose">CodeLabCompose</string>
+    <string name="show_less">Show Less</string>
+    <string name="show_more">Show More</string>
 </resources>

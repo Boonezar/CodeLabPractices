@@ -26,6 +26,15 @@
         android:theme="@style/Theme.CodeLabPractices"
         tools:targetApi="31">
         <activity
+            android:name=".CodeLabComposeBasics"
+            android:exported="false"
+            android:label="@string/title_activity_code_lab_compose"
+            android:theme="@style/Theme.CodeLabPractices">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".CodeLab4Dot1"
             android:exported="false"
             android:label="@string/title_activity_droid_cafe"
