@@ -10,6 +10,7 @@
     <string name="lab_3_3">3.3 Support Libraries</string>
     <string name="lab_4_1">4.1 – 4.3 Droid Cafe</string>
     <string name="lab_4_3">4.3 Dialog and Picker</string>
+    <string name="lab_4_5">4.5 RecyclerView</string>
     <string name="compose_basics">Compose Basics</string>
     <string name="other_practices">Other Practices</string>
     <string name="compose_list">Compose Dynamic List</string>
@@ -132,4 +133,7 @@
     <string name="date_picker_header">Tap to test the date picker.</string>
     <string name="date_title">Date</string>
     <string name="datepicker">datePicker</string>
+    <string name="title_activity_code_lab4_dot5">CodeLab4Dot5</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
 </resources>
