@@ -8,7 +8,8 @@
     <string name="lab_2_3">2.3 Implicit Intents</string>
     <string name="lab_3_1"><![CDATA[3.1 SimpleCalc & Debugger]]></string>
     <string name="lab_3_3">3.3 Support Libraries</string>
-    <string name="lab_4_1">4.1 Droid Cafe</string>
+    <string name="lab_4_1">4.1 – 4.3 Droid Cafe</string>
+    <string name="lab_4_3">4.3 Dialog and Picker</string>
     <string name="compose_basics">Compose Basics</string>
     <string name="other_practices">Other Practices</string>
     <string name="compose_list">Compose Dynamic List</string>
@@ -113,4 +114,22 @@
     <string name="title_activity_code_lab_compose">CodeLabCompose</string>
     <string name="show_less">Show Less</string>
     <string name="show_more">Show More</string>
+
+    <!-- 4.3 -->
+    <string name="action_contact">Contact</string>
+    <string name="action_order">Order</string>
+    <string name="action_status">Status</string>
+    <string name="action_favorites">Favorites</string>
+    <string name="action_order_message">You selected Order.</string>
+    <string name="action_status_message">You selected Status.</string>
+    <string name="action_favorites_message">You selected Favorites.</string>
+    <string name="action_contact_message">You selected Contact.</string>
+    <string name="alert_header">Tap to test the alert.</string>
+    <string name="alert_title">Alert</string>
+    <string name="alert_dialog">Click OK to continue, or Cancel to stop:</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="date_picker_header">Tap to test the date picker.</string>
+    <string name="date_title">Date</string>
+    <string name="datepicker">datePicker</string>
 </resources>

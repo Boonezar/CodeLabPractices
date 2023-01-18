@@ -94,6 +94,15 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/codeLab4Dot3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="15dp"
+                android:text="@string/lab_4_3"
+                android:textSize="20sp" />
+
+            <TextView
                 android:id="@+id/codeLabComposeBasics"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
