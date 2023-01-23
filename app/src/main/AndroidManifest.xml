@@ -26,17 +26,19 @@
         android:theme="@style/Theme.CodeLabPractices"
         tools:targetApi="31">
         <activity
-            android:name=".CodeLab4Dot5"
+            android:name=".CodeLab4Dot4"
             android:exported="false"
-            android:label="@string/title_activity_code_lab4_dot5"
+            android:label="@string/title_activity_code_lab4_dot4"
             android:theme="@style/Theme.CodeLabPractices.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab4Dot3"
-            android:exported="false">
+            android:name=".CodeLab4Dot5"
+            android:exported="false"
+            android:label="@string/title_activity_code_lab4_dot5"
+            android:theme="@style/Theme.CodeLabPractices.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
