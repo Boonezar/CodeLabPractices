@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.codeLab4Dot1).setOnClickListener { startActivity(Intent(this, CodeLab4Dot1::class.java)) }
         findViewById<TextView>(R.id.codeLab4Dot4).setOnClickListener { startActivity(Intent(this, CodeLab4Dot4::class.java)) }
         findViewById<TextView>(R.id.codeLab4Dot5).setOnClickListener { startActivity(Intent(this, CodeLab4Dot5::class.java)) }
+        findViewById<TextView>(R.id.codeLab5Dot1).setOnClickListener { startActivity(Intent(this, CodeLab5Dot1::class.java)) }
         findViewById<TextView>(R.id.codeLabComposeBasics).setOnClickListener { startActivity(Intent(this, CodeLabComposeBasics::class.java)) }
         findViewById<TextView>(R.id.composeList).setOnClickListener { startActivity(Intent(this, ComposeDynamicList::class.java)) }
     }

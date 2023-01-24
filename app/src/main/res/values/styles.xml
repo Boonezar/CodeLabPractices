@@ -7,4 +7,28 @@
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <!-- 5.1 -->
+    <style name="scoreButtons" parent="Widget.AppCompat.Button" >
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:tint">@color/purple_500</item>
+    </style>
+    <style name="plusButtons" parent="scoreButtons">
+        <item name="android:src">@drawable/ic_plus</item>
+        <item name="android:contentDescription">@string/plus_button_description</item>
+    </style>
+    <style name="minusButtons" parent="scoreButtons">
+        <item name="android:src">@drawable/ic_minus</item>
+        <item name="android:contentDescription">@string/minus_button_description</item>
+    </style>
+    <style name="scoreText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
+    </style>
+    <style name="teamText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1</item>
+    </style>
 </resources>
