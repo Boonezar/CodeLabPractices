@@ -26,6 +26,13 @@
         android:theme="@style/Theme.CodeLabPractices"
         tools:targetApi="31">
         <activity
+            android:name=".CodeLab5Dot2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".CodeLab5Dot1"
             android:exported="false">
             <meta-data
