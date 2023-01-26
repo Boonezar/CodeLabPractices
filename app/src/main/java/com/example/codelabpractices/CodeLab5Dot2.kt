@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.codelabpractices.data.Sport
 import com.example.codelabpractices.util.SportsAdapter
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class CodeLab5Dot2 : AppCompatActivity() {
     private lateinit var mRecyclerView: RecyclerView
@@ -62,6 +63,10 @@ class CodeLab5Dot2 : AppCompatActivity() {
 
         initializeData()
         mItemTouchHelper.attachToRecyclerView(mRecyclerView)
+
+        findViewById<FloatingActionButton>(R.id.refresh_fab).setOnClickListener {
+            initializeData()
+        }
     }
 
     private fun initializeData() {
