@@ -12,6 +12,45 @@ class CodeLab5Dot2 : AppCompatActivity() {
     private lateinit var mRecyclerView: RecyclerView
     private lateinit var mAdapter: SportsAdapter
     private val mSportsData = mutableListOf<Sport>()
+    private val mItemTouchHelper by lazy {
+        val simpleItemTouchHelper = object : ItemTouchHelper.SimpleCallback(ItemTouchHelper.UP or ItemTouchHelper.DOWN, ItemTouchHelper.RIGHT or ItemTouchHelper.LEFT) {
+            override fun onMove(
+                recyclerView: RecyclerView,
+                viewHolder: RecyclerView.ViewHolder,
+                target: RecyclerView.ViewHolder
+            ): Boolean {
+                val from = viewHolder.adapterPosition
+                val to = target.adapterPosition
+                mAdapter.moveItem(from, to)
+                mAdapter.notifyItemMoved(from, to)
+                return true
+            }
+
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+                mSportsData.removeAt(viewHolder.adapterPosition)
+                mAdapter.notifyItemRemoved(viewHolder.adapterPosition)
+            }
+
+            override fun onSelectedChanged(
+                viewHolder: RecyclerView.ViewHolder?,
+                actionState: Int
+            ) {
+                super.onSelectedChanged(viewHolder, actionState)
+                if(actionState == ItemTouchHelper.ACTION_STATE_DRAG) {
+                    viewHolder?.itemView?.alpha = 0.5f
+                }
+            }
+
+            override fun clearView(
+                recyclerView: RecyclerView,
+                viewHolder: RecyclerView.ViewHolder
+            ) {
+                super.clearView(recyclerView, viewHolder)
+                viewHolder.itemView.alpha = 1.0f
+            }
+        }
+        ItemTouchHelper(simpleItemTouchHelper)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_code_lab5_dot2)
@@ -22,6 +61,7 @@ class CodeLab5Dot2 : AppCompatActivity() {
         mRecyclerView.adapter = mAdapter
 
         initializeData()
+        mItemTouchHelper.attachToRecyclerView(mRecyclerView)
     }
 
     private fun initializeData() {
