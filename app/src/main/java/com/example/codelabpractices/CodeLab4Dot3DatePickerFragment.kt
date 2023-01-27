@@ -4,13 +4,9 @@ import android.app.DatePickerDialog
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.DatePicker
 import androidx.annotation.NonNull
 import androidx.fragment.app.DialogFragment
-import com.example.codelabpractices.ui.main.PlaceholderFragment
 import java.util.Calendar
 
 /**
@@ -32,6 +28,6 @@ class CodeLab4Dot3DatePickerFragment : DialogFragment(), DatePickerDialog.OnDate
     }
 
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
-        (activity as CodeLab4Dot4).processDatePickerResult(year, month, dayOfMonth)
+        (activity as CodeLab4Dot4Activity).processDatePickerResult(year, month, dayOfMonth)
     }
 }

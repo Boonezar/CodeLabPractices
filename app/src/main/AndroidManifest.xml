@@ -28,35 +28,35 @@
         android:theme="@style/Theme.CodeLabPractices"
         tools:targetApi="31">
         <activity
-            android:name=".CodeLabMarsPhotos"
+            android:name=".CodeLabMarsPhotosActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab5Dot2Detail"
+            android:name=".CodeLab5Dot2DetailsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab5Dot2"
+            android:name=".CodeLab5Dot2Activity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab5Dot1"
+            android:name=".CodeLab5Dot1Activity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab4Dot4"
+            android:name=".CodeLab4Dot4Activity"
             android:exported="false"
             android:label="@string/title_activity_code_lab4_dot4"
             android:theme="@style/Theme.CodeLabPractices.NoActionBar">
@@ -65,7 +65,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab4Dot5"
+            android:name=".CodeLab4Dot5Activity"
             android:exported="false"
             android:label="@string/title_activity_code_lab4_dot5"
             android:theme="@style/Theme.CodeLabPractices.NoActionBar">
@@ -83,7 +83,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab4Dot1"
+            android:name=".CodeLab4Dot1Activity"
             android:exported="false"
             android:label="@string/title_activity_droid_cafe"
             android:theme="@style/Theme.CodeLabPractices.NoActionBar">
@@ -92,21 +92,21 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab3Dot3"
+            android:name=".CodeLab3Dot3Activity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab3Dot1"
+            android:name=".CodeLab3Dot1Activity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab2Dot3"
+            android:name=".CodeLab2Dot3Activity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -122,28 +122,28 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab2Dot1Second"
+            android:name=".CodeLab2Dot1SecondActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab2Dot1"
+            android:name=".CodeLab2Dot1Activity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab1Dot3"
+            android:name=".CodeLab1Dot3Activity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CodeLab1Dot2"
+            android:name=".CodeLab1Dot2Activity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -6,7 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 
-class CodeLab1Dot2 : AppCompatActivity() {
+class CodeLab1Dot2Activity : AppCompatActivity() {
     private var mCount: Int = 0
     private lateinit var mShowCount: TextView
     override fun onCreate(savedInstanceState: Bundle?) {

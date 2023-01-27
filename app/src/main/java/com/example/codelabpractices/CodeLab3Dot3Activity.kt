@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import kotlin.random.Random
 
-class CodeLab3Dot3 : AppCompatActivity() {
+class CodeLab3Dot3Activity : AppCompatActivity() {
     private lateinit var mHelloTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {

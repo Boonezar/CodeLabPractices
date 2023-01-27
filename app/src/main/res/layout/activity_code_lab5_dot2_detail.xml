@@ -6,7 +6,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".CodeLab5Dot2Detail">
+        tools:context=".CodeLab5Dot2DetailsActivity">
         <ImageView
             android:id="@+id/detail_sport_image"
             android:layout_width="match_parent"

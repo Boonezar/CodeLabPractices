@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CodeLab2Dot3">
+    tools:context=".CodeLab2Dot3Activity">
 
     <EditText
         android:id="@+id/website_edittext"

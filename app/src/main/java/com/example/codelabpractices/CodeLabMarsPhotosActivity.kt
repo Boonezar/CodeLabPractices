@@ -7,7 +7,7 @@ import androidx.databinding.DataBindingUtil
 import com.example.codelabpractices.databinding.ActivityCodeLabMarsPhotosBinding
 import com.example.codelabpractices.util.MarsPhotoGridAdapter
 
-class CodeLabMarsPhotos : AppCompatActivity() {
+class CodeLabMarsPhotosActivity : AppCompatActivity() {
 
     private val viewModel: CodeLabMarsPhotosViewModel by viewModels()
 

@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatDelegate
 
-class CodeLab5Dot1 : AppCompatActivity() {
+class CodeLab5Dot1Activity : AppCompatActivity() {
     companion object {
         const val STATE_SCORE_1 = "Team 1 Score:"
         const val STATE_SCORE_2 = "Team 2 Score:"

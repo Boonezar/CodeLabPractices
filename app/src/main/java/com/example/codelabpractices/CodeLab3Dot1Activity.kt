@@ -8,7 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import com.example.codelabpractices.util.Calculator
 
-class CodeLab3Dot1 : AppCompatActivity() {
+class CodeLab3Dot1Activity : AppCompatActivity() {
     companion object {
         const val LOG_TAG = "CalculatorActivity"
     }

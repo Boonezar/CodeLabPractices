@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.codelabpractices.ui.main.SectionsPagerAdapter
 import com.example.codelabpractices.databinding.ActivityCodeLab4Dot4Binding
 
-class CodeLab4Dot4 : AppCompatActivity() {
+class CodeLab4Dot4Activity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCodeLab4Dot4Binding
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CodeLab1Dot2">
+    tools:context=".CodeLab1Dot2Activity">
 
     <TextView
         android:id="@+id/show_count"

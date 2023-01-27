@@ -9,7 +9,7 @@ import com.example.codelabpractices.data.Sport
 import com.example.codelabpractices.util.SportsAdapter
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class CodeLab5Dot2 : AppCompatActivity() {
+class CodeLab5Dot2Activity : AppCompatActivity() {
     private lateinit var mRecyclerView: RecyclerView
     private lateinit var mAdapter: SportsAdapter
     private val mSportsData = mutableListOf<Sport>()

@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 
-class CodeLab2Dot1Second : AppCompatActivity() {
+class CodeLab2Dot1SecondActivity : AppCompatActivity() {
     companion object {
         const val LOG_TAG = "SecondActivity"
         const val EXTRA_REPLY = "com.example.android.twoactivities.extra.REPLY"
@@ -21,7 +21,7 @@ class CodeLab2Dot1Second : AppCompatActivity() {
         setContentView(R.layout.activity_code_lab2_dot1_second)
         mReply = findViewById(R.id.editText_second)
         findViewById<Button>(R.id.button_second).setOnClickListener { returnReply() }
-        val message: String = intent.extras?.get(CodeLab2Dot1.EXTRA_MESSAGE).toString()
+        val message: String = intent.extras?.get(CodeLab2Dot1Activity.EXTRA_MESSAGE).toString()
         Log.d(LOG_TAG, "Received Message: $message")
         findViewById<TextView>(R.id.text_message).text = message
     }

@@ -11,7 +11,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 
-class CodeLab2Dot1 : AppCompatActivity() {
+class CodeLab2Dot1Activity : AppCompatActivity() {
     companion object {
         const val LOG_TAG = "MainActivity"
         const val EXTRA_MESSAGE = "com.example.android.twoactivities.extra.MESSAGE"
@@ -79,14 +79,14 @@ class CodeLab2Dot1 : AppCompatActivity() {
 
     private fun launchSecondActivity() {
         Log.d(LOG_TAG, "Button clicked!")
-        val intent = Intent(this, CodeLab2Dot1Second::class.java)
+        val intent = Intent(this, CodeLab2Dot1SecondActivity::class.java)
         intent.putExtra(EXTRA_MESSAGE, mMessageEditText.text)
         getResult.launch(intent)
     }
 
     private val getResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
         if(it.resultCode == Activity.RESULT_OK) {
-            val reply = it.data?.getStringExtra(CodeLab2Dot1Second.EXTRA_REPLY)
+            val reply = it.data?.getStringExtra(CodeLab2Dot1SecondActivity.EXTRA_REPLY)
             Log.d(LOG_TAG, "Received Reply, reply: $reply")
             mReplyHeadTextView.visibility = View.VISIBLE
             mReplyTextView.visibility = View.VISIBLE

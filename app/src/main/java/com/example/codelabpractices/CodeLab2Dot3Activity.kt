@@ -9,7 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.core.app.ShareCompat
 
-class CodeLab2Dot3 : AppCompatActivity() {
+class CodeLab2Dot3Activity : AppCompatActivity() {
     companion object {
         const val LOG_TAG = "ImplicitIntents"
     }

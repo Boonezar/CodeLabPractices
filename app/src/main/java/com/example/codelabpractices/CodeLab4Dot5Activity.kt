@@ -1,19 +1,14 @@
 package com.example.codelabpractices
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.codelabpractices.databinding.ActivityCodeLab4Dot5Binding
 import com.example.codelabpractices.util.WordListAdapter
 import java.util.LinkedList
 
-class CodeLab4Dot5 : AppCompatActivity() {
+class CodeLab4Dot5Activity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCodeLab4Dot5Binding
     private lateinit var mWordList: LinkedList<String>

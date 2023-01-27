@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.codelabpractices.CodeLab5Dot2Detail
+import com.example.codelabpractices.CodeLab5Dot2DetailsActivity
 import com.example.codelabpractices.R
 import com.example.codelabpractices.data.Sport
 
@@ -53,7 +53,7 @@ class SportsAdapter(private var mSportsData: List<Sport>, private val mContext: 
 
         override fun onClick(v: View?) {
             val currentSport = mSportsData[adapterPosition]
-            val intent = Intent(mContext, CodeLab5Dot2Detail::class.java)
+            val intent = Intent(mContext, CodeLab5Dot2DetailsActivity::class.java)
             intent.putExtra("title", currentSport.title)
             intent.putExtra("image_resource", currentSport.imageResource)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK

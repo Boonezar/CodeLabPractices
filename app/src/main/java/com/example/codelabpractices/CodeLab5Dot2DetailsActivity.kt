@@ -6,7 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 
-class CodeLab5Dot2Detail : AppCompatActivity() {
+class CodeLab5Dot2DetailsActivity : AppCompatActivity() {
     private lateinit var sportsTitle: TextView
     private lateinit var sportsImage: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
