@@ -47,8 +47,12 @@ class CodeLab4Dot1Activity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_order -> {
-                findNavController(R.id.nav_host_fragment_content_droid_cafe)
-                    .navigate(R.id.action_FirstFragment_to_SecondFragment)
+                try {
+                    findNavController(R.id.nav_host_fragment_content_droid_cafe)
+                        .navigate(R.id.action_FirstFragment_to_SecondFragment)
+                } catch (e: Exception) {
+                    displayToast(getString(R.string.action_order_message))
+                }
                 return true
             }
             R.id.action_status -> {
