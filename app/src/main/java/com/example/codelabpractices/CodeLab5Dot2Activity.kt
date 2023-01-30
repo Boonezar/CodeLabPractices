@@ -2,8 +2,8 @@ package com.example.codelabpractices
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ItemTouchHelper
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.codelabpractices.data.Sport
 import com.example.codelabpractices.util.SportsAdapter
@@ -14,6 +14,8 @@ class CodeLab5Dot2Activity : AppCompatActivity() {
     private lateinit var mAdapter: SportsAdapter
     private val mSportsData = mutableListOf<Sport>()
     private val mItemTouchHelper by lazy {
+        // Ability to turn off swipes for different grid column count
+        // val swipeDir = if(resources.getInteger(R.integer.grid_column_count) > 1) 0 else ItemTouchHelper.RIGHT or ItemTouchHelper.LEFT
         val simpleItemTouchHelper = object : ItemTouchHelper.SimpleCallback(ItemTouchHelper.UP or ItemTouchHelper.DOWN, ItemTouchHelper.RIGHT or ItemTouchHelper.LEFT) {
             override fun onMove(
                 recyclerView: RecyclerView,
@@ -57,7 +59,7 @@ class CodeLab5Dot2Activity : AppCompatActivity() {
         setContentView(R.layout.activity_code_lab5_dot2)
 
         mRecyclerView = findViewById(R.id.sport_recycler_view)
-        mRecyclerView.layoutManager = LinearLayoutManager(this)
+        mRecyclerView.layoutManager = GridLayoutManager(this, resources.getInteger(R.integer.grid_column_count))
         mAdapter = SportsAdapter(mSportsData, applicationContext)
         mRecyclerView.adapter = mAdapter
 
