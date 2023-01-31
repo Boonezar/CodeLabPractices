@@ -99,7 +99,7 @@ fun Greetings(
 fun Greeting(name: String) {
     Card(
         modifier = Modifier.padding(vertical = 4.dp, horizontal = 8.dp),
-        colors = CardDefaults.cardColors(containerColor =  androidx.compose.material.MaterialTheme.colors.primary)
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primary)
     ) {
         CardContent(name = name)
     }
